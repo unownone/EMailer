@@ -1,0 +1,11 @@
+<!doctype html>
+<head>
+    <title>Sending Email</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input type="email" name="email" placeholder="Your Email Address"><br>
+        <input type="submit" name="submit">
+    </form>
+</body>
